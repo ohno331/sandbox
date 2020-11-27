@@ -1,6 +1,6 @@
 <Context displayName="Sample Site" docBase="SampleSite" path="/sandbox_servlet" reloadable="true">
 		<Resource name="jdbc/samplesite" auth="Container" type="javax.sql.DataSource" 
 		username="sa" password="" driverClassName="org.h2.Driver"
-		url="jdbc:h2:tcp://localhost/~/samplesite"
+		url="jdbc:h2:mem://localhost/~/samplesite"
 		maxTotal="4" maxWaitMillis="5000" maxIdle="2" />
 </Context>
