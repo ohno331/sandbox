@@ -22,9 +22,9 @@ public class UserServlet extends HttpServlet {
 		resp.setContentType("text/html;charset=UTF-8");
 		
 		if (req.getParameter("register") != null) { // 新規登録画面へ遷移
-			req.getRequestDispatcher("WEB-INF/jsp/register.jsp").forward(req, resp);
+			req.getRequestDispatcher("WEB-INF/jsp/User/register.jsp").forward(req, resp);
 		} else {
-			req.getRequestDispatcher("WEB-INF/jsp/template.jsp").forward(req, resp);
+			req.getRequestDispatcher("WEB-INF/jsp/home.jsp").forward(req, resp);
 		}
 	}
 	
@@ -52,9 +52,9 @@ public class UserServlet extends HttpServlet {
 			//req.getRequestDispatcher("WEB-INF/jsp/index.jsp").forward(req, resp);
 			resp.sendRedirect(req.getHeader("Referer"));
 		} else if (req.getParameter("register") != null) { // 新規登録画面からの遷移
-			req.getRequestDispatcher("WEB-INF/jsp/register.jsp").forward(req, resp);
+			req.getRequestDispatcher("WEB-INF/jsp/User/register.jsp").forward(req, resp);
 		} else if (req.getParameter("confirm") != null) { // 確認画面から遷移
-			req.getRequestDispatcher("WEB-INF/jsp/template.jsp").forward(req, resp);
+			req.getRequestDispatcher("WEB-INF/jsp/home.jsp").forward(req, resp);
 		}
 		//req.getRequestDispatcher("WEB-INF/jsp/index.jsp").forward(req, resp);
 	}
