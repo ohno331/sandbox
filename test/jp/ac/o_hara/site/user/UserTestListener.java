@@ -9,13 +9,13 @@ import javax.servlet.annotation.WebListener;
  *
  */
 @WebListener
-public class UserListener implements ServletContextListener {
+public class UserTestListener implements ServletContextListener {
 	UserDAO dao = null;
 
     /**
      * Default constructor. 
      */
-    public UserListener() {
+    public UserTestListener() {
     	dao = UserDAO.getInstance();
     }
 
