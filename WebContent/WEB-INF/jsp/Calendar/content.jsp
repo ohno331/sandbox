@@ -23,7 +23,7 @@
 <article class="panel panel-primary">
 	<header class="panel-heading"><span class="glyphicon glyphicon-paperclip">&nbsp;</span><%=next.getModuleName() %>モジュール</header>
 	<section class="panel-body">
-	<% module = (Schedulable)Class.forName("jp.tist.proc.module."+next.getModuleName().toLowerCase()+"."+next.getModuleName()+"Bean").newInstance(); %>
+	<% module = (Schedulable)Class.forName("jp.ac.o_hara.site."+next.getModuleName().toLowerCase()+"."+next.getModuleName()+"Bean").newInstance(); %>
 	<%=module.preRenderSchedule() %>
 <%
 			}
